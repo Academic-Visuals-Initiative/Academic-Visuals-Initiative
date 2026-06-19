@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "blog1",
+      "title": "University Profile or Personal Website? Which is Better for You?",
+      "category": "community",
+      "date": "",
+      "author": "Academic Visuals Initiative",
+      "summary": "Comparing university directory pages and personal websites across ownership, content flexibility, design, discoverability, and career portability.",
+      "image": "https://images.pexels.com/photos/10020052/pexels-photo-10020052.jpeg?_gl=1*4la7ws*_ga*MTAzMzAxOTkzMy4xNzgxNjUwNDQ4*_ga_8JE65Q40S6*czE3ODE2NTA0NDckbzEkZzEkdDE3ODE2NTA1MzckajQxJGwwJGgw"
+    },
+    {
+      "id": "blog2",
+      "title": "What is GitHub Pages, and Why Should Academics Care?",
+      "category": "community",
+      "date": "",
+      "author": "Academic Visuals Initiative",
+      "summary": "A practical overview of GitHub Pages for academics — how it works, key benefits, and recommended use cases for researchers and graduate students.",
+      "image": "https://images.unsplash.com/photo-1630514969818-94aefc42ec47?q=80&w=774&auto=format&fit=crop"
+    },
+    {
+      "id": "blog3",
+      "title": "How Important is the Look and Feel of Your Academic Website?",
+      "category": "community",
+      "date": "",
+      "author": "Academic Visuals Initiative",
+      "summary": "Why the overall impression of your academic website matters more than just having all the information in place.",
+      "image": "https://images.unsplash.com/photo-1649478443254-b1a21cc9ed96?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Project Structure",
+  "sections": [
+    {
+      "content": [
+        { "type": "h2", "text": "Overview" },
+        { "type": "p", "text": "Your project folder is organized in a simple, intuitive structure. Here's what each file and folder does." }
+      ]
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "Root Folder" },
+        { "type": "p", "text": "The root of your template contains the main HTML files and folders for assets:" }
+      ],
+      "code": "your-site/\n├── index.html          # Home page\n├── css/                # Stylesheets\n│   ├── global.css      # Global styles\n│   └── home.css        # Home page styles\n├── js/                 # JavaScript\n│   ├── global.js       # Global scripts\n│   └── home.js         # Home page scripts\n└── data.json           # Your editable content"
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "The data.json File" },
+        { "type": "p", "text": "This is the most important file for you. It contains all the text content for your website in a simple JSON format. Open it in any text editor and replace the values with your own information." }
+      ]
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "Subtopics" },
+        { "type": "p", "text": "For multi-page templates, each page has its own HTML file (e.g., `initiative.html`, `gallery.html`). You can customize each page individually." }
+      ]
+    }
+  ]
+}

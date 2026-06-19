@@ -1,0 +1,126 @@
+{
+  "title": "University Profile or Personal Website? Which is Better for You?",
+  "author": "Academic Visuals Initiative",
+  "date": "",
+  "align": "left",
+  "content": [
+    {
+      "type": "hero",
+      "src": "https://images.pexels.com/photos/10020052/pexels-photo-10020052.jpeg",
+      "alt": "Workspace with laptop and notebook",
+      "credit": "Photo by weCare Media on Pexels"
+    },
+    {
+      "type": "lead",
+      "text": "When deciding how to share your academic achievements online, you may wonder how a personal website compares to the profile page provided by your university. While both platforms display your name, title, and research focus, they serve different functions and offer different levels of flexibility."
+    },
+    {
+      "type": "p",
+      "text": "Below is an analysis of how these two options compare across key areas."
+    },
+    {
+      "type": "h2",
+      "text": "Ownership and Autonomy"
+    },
+    {
+      "type": "p",
+      "text": "The primary distinction lies in ownership. A university profile is managed by your institution, meaning it is subject to departmental formatting rules, content guidelines, and system restrictions. Making updates often requires submitting a request to an administrator, and even if you have direct editing access, the layout remains fixed."
+    },
+    {
+      "type": "p",
+      "text": "A personal website is entirely under your control. You decide the layout, the content, and the update schedule, allowing you to present your work in your own style and make adjustments whenever necessary."
+    },
+    {
+      "type": "h2",
+      "text": "Content Flexibility"
+    },
+{
+  "type": "image-right",
+  "src": "https://images.unsplash.com/photo-1637502875124-eb4a9843a2fa?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "alt": "Description",
+  "caption": "",
+  "credit":"Photo by solidpixels on Unsplash",
+  "size": "s"
+},
+    {
+      "type": "p",
+      "text": "University profiles typically focus on essential directory information, such as your department, title, primary research interests, and a short list of publications."
+    },
+    {
+      "type": "p",
+      "text": "Personal websites allow for a much broader range of content. Researchers often use their own sites to share:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Comprehensive CVs",
+        "Syllabi and course materials",
+        "Blog posts and commentary",
+        "Media appearances and interviews",
+        "Updates on ongoing projects",
+        "Personal research philosophies",
+        "Public-facing or creative projects"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "A personal site accommodates materials that do not fit into standard academic templates."
+    },
+    {
+      "type": "h2",
+      "text": "Design and Personalization"
+    },
+    {
+      "type": "p",
+      "text": "Because institutional profiles use uniform templates to maintain brand consistency, individual pages within a department look nearly identical. This makes it difficult to distinguish your online presence."
+    },
+    {
+      "type": "p",
+      "text": "With a personal website, you can select fonts, color schemes, and structures that match your professional identity. Whether you prefer a simple text-based layout or want to integrate photos, logos, and interactive media, you have the creative freedom to design the site as you see fit."
+    },
+    {
+      "type": "h2",
+      "text": "Discoverability and Link Sharing"
+    },
+    {
+      "type": "p",
+      "text": "University domains often have high search engine authority, which can help institutional profiles rank well in search results. However, a properly configured personal website can also achieve good search visibility."
+    },
+    {
+      "type": "p",
+      "text": "Additionally, a personal website provides a permanent, unchanging URL. This link can be used consistently in email signatures, grant applications, and social media profiles without the risk of broken links caused by institutional website migrations."
+    },
+    {
+      "type": "h2",
+      "text": "Portability and Career Transitions"
+    },
+    {
+      "type": "p",
+      "text": "An institutional profile is tied to your current employment. If you change universities, your page may be deleted or left unmaintained, requiring you to rebuild your profile on a new system."
+    },
+    {
+      "type": "p",
+      "text": "A personal website serves as a permanent digital home throughout your career. When you change roles or institutions, you can update your affiliation and contact information without losing your content, search ranking, or web address."
+    },
+    {
+      "type": "h2",
+      "text": "Quick Comparison"
+    },
+    {
+      "type": "table",
+      "headers": ["Feature", "University Profile", "Personal Website"],
+      "rows": [
+        ["Primary Control", "The institution", "The individual"],
+        ["Design Options", "Fixed template", "Fully customizable"],
+        ["Editing Process", "Often restricted or mediated", "Direct and immediate"],
+        ["Allowed Content", "Standard biographical/research facts", "Unrestricted"],
+        ["Career Portability", "Tied to employment", "Remains with you"],
+        ["Link Stability", "Subject to system changes", "Permanent URL"]
+      ]
+    },
+    {
+      "type": "small",
+      "text": "Choosing between a university profile and a personal website does not have to be an either-or decision. Many academics maintain both — using their institutional page as a directory entry and their personal site as a dynamic, comprehensive portfolio."
+    }
+  ]
+}

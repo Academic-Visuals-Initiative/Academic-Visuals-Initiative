@@ -1,0 +1,65 @@
+{
+   "title":"Getting Online",
+   "sections":[
+      {
+         "content":[
+            {
+               "type":"h2",
+               "text":"Step 1: Open Your Web Browser"
+            },
+            {
+               "type":"p",
+               "text":"To build a website, you first need to open your web browser and search for the tools we will use."
+            },
+            {
+               "type":"p",
+               "text":"Find the icon for your web browser on your computer screen or in your applications menu and double-click it to open it. Common browsers include:"
+            },
+            {
+               "type":"gallery",
+               "images":[
+                  {
+                     "src":"../img/docs/chrome.svg",
+                     "alt":"Chrome"
+                  },
+                  {
+                     "src":"../img/docs/microsoft-edge.svg",
+                     "alt":"Edge"
+                  },
+                  {
+                     "src":"../img/docs/safari.svg",
+                     "alt":"Safari"
+                  },
+                  {
+                     "src":"../img/docs/firefox.svg",
+                     "alt":"Firefox"
+                  },
+                  {
+                     "src":"../img/docs/opera.svg",
+                     "alt":"Opera"
+                  },
+                  {
+                     "src":"../img/docs/brave.svg",
+                     "alt":"Brave"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "content":[
+            {
+               "type":"h2",
+               "text":"Step 2: Go to a Search Engine"
+            },
+            {
+               "type":"ol",
+               "items":[
+                  "Look at the very top of your browser window. You will see a long, horizontal bar. This is the Address Bar.",
+                  "Click inside this bar, type www.google.com, and press the Enter key on your keyboard."
+               ]
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,198 @@
+function formatText(t) {
+    if (!t) return t;
+    return t
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        .replace(/\*\*([^\*]+)\s*\*\s*([^\*]+)\*\*/g, '<a href="$2" target="_blank" rel="noopener" class="docs-link">$1</a>')
+        .replace(/\*\*([^\*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*([^\*]+)\*/g, '<strong class="blog-semibold">$1</strong>')
+        .replace(/==([^=]+)==/g, '<mark class="blog-highlight">$1</mark>')
+        .replace(/~([^~]+)~/g, '<span class="blog-accent">$1</span>')
+        .replace(/:(\d):/g, function(m, d) { return '<span class="keycap">' + d + '</span>'; });
+}
+
+function renderContent(block) {
+    if (typeof block === "string") return '<p class="blog-p">' + formatText(block) + '</p>';
+    switch (block.type) {
+        case "lead":
+            return '<p class="blog-lead">' + formatText(block.text) + '</p>';
+        case "p":
+            return '<p class="blog-p' + (block.level > 1 ? ' blog-p-level' + block.level : '') + '">' + formatText(block.text) + '</p>';
+        case "h1":
+            return '<h1 class="blog-h1">' + formatText(block.text) + '</h1>';
+        case "h2":
+            return '<h2 class="blog-h2">' + formatText(block.text) + '</h2>';
+        case "h3":
+            return '<h3 class="blog-h3">' + formatText(block.text) + '</h3>';
+        case "h4":
+            return '<h4 class="blog-h4">' + formatText(block.text) + '</h4>';
+        case "hc":
+            return '<h2 class="blog-hc" style="font-weight:' + (block.weight || 700) + (block.size ? ';font-size:' + block.size : '') + (block.top ? ';margin-top:' + block.top : '') + (block.bot ? ';margin-bottom:' + block.bot : '') + '">' + formatText(block.text) + '</h2>';
+        case "ul":
+            return '<ul class="blog-ul' + (block.level > 1 ? ' blog-ul-level' + block.level : '') + '">' + block.items.map(function(i) { return '<li>' + formatText(i) + '</li>'; }).join("") + '</ul>';
+        case "ol":
+            return '<ol class="blog-ol' + (block.level > 1 ? ' blog-ol-level' + block.level : '') + '">' + block.items.map(function(i) { return '<li>' + formatText(i) + '</li>'; }).join("") + '</ol>';
+        case "small":
+            return '<p class="blog-small">' + formatText(block.text) + '</p>';
+        case "hero":
+            return '<div class="blog-hero">' + (block.src ? '<img alt="' + (block.alt || "") + '" src="' + block.src + '" loading="lazy" />' : "") + (block.credit ? '<span class="blog-img-credit">' + formatText(block.credit) + '</span>' : '') + '</div>';
+        case "image-full":
+            return '<figure class="blog-image-full' + (block.size ? ' img-size-' + block.size : '') + '">' + (block.src ? '<div class="blog-img-wrap"><img alt="' + (block.alt || "") + '" src="' + block.src + '" loading="lazy" />' + (block.credit ? '<span class="blog-img-credit">' + formatText(block.credit) + '</span>' : '') + '</div>' : "") + (block.caption ? '<figcaption>' + formatText(block.caption) + '</figcaption>' : "") + '</figure>';
+        case "image-left":
+            return '<figure class="blog-image-left' + (block.size ? ' img-size-' + block.size : '') + '">' + (block.src ? '<div class="blog-img-wrap"><img alt="' + (block.alt || "") + '" src="' + block.src + '" loading="lazy" />' + (block.credit ? '<span class="blog-img-credit">' + formatText(block.credit) + '</span>' : '') + '</div>' : "") + (block.caption ? '<figcaption>' + formatText(block.caption) + '</figcaption>' : "") + '</figure>';
+        case "image-right":
+            return '<figure class="blog-image-right' + (block.size ? ' img-size-' + block.size : '') + '">' + (block.src ? '<div class="blog-img-inner"><div class="blog-img-wrap"><img alt="' + (block.alt || "") + '" src="' + block.src + '" loading="lazy" />' + (block.credit ? '<span class="blog-img-credit">' + formatText(block.credit) + '</span>' : '') + '</div>' + (block.caption ? '<figcaption>' + formatText(block.caption) + '</figcaption>' : '') + '</div>' : "") + '</figure>';
+        case "image-caption":
+            return '<figure class="blog-image-caption' + (block.size ? ' img-size-' + block.size : '') + '">' + (block.src ? '<div class="blog-img-wrap"><img alt="' + (block.alt || "") + '" src="' + block.src + '" loading="lazy" />' + (block.credit ? '<span class="blog-img-credit">' + formatText(block.credit) + '</span>' : '') + '</div>' : "") + (block.caption ? '<figcaption>' + formatText(block.caption) + '</figcaption>' : "") + '</figure>';
+        case "gallery":
+            return '<div class="blog-gallery">' + (block.images || []).map(function(img) {
+                return '<div class="blog-gallery-item"><img alt="' + (img.alt || "") + '" src="' + img.src + '" loading="lazy" /></div>';
+            }).join("") + '</div>';
+        case "video":
+            return '<div class="blog-video">' + (block.src ? '<iframe src="' + block.src + '" frameborder="0" allowfullscreen></iframe>' : "") + '</div>';
+        case "blockquote":
+            return '<blockquote class="blog-blockquote"><p>' + formatText(block.text) + '</p>' + (block.source ? '<cite>— ' + formatText(block.source) + '</cite>' : "") + '</blockquote>';
+        case "pullquote":
+            return '<blockquote class="blog-pullquote"><p>' + formatText(block.text) + '</p></blockquote>';
+        case "code":
+            return '<div class="blog-code"><pre><code>' + block.code + '</code></pre><button class="blog-copy-btn" onclick="var btn=this;navigator.clipboard.writeText(this.parentElement.querySelector(\'code\').textContent);btn.textContent=\'Copied!\';setTimeout(function(){btn.textContent=\'Copy\'},2000)">Copy</button></div>';
+        case "table":
+            return '<div class="blog-table"><table>' + ((block.headers || []).length ? '<thead><tr>' + block.headers.map(function(h) { return '<th>' + formatText(h) + '</th>'; }).join("") + '</tr></thead>' : "") + '<tbody>' + (block.rows || []).map(function(row) {
+                return '<tr>' + row.map(function(c) { return '<td>' + formatText(c) + '</td>'; }).join("") + '</tr>';
+            }).join("") + '</tbody></table></div>';
+        case "divider":
+            return '<hr class="blog-divider" />';
+        case "spacer":
+            return '<div class="blog-spacer" style="height:' + (block.height || "2rem") + '"></div>';
+        case "callout":
+            return '<div class="blog-callout blog-callout-' + (block.variant || "note") + '"><span class="blog-callout-icon material-symbols-outlined">' + (block.icon || "info") + '</span><p>' + formatText(block.text) + '</p></div>';
+        case "button":
+            return '<div style="text-align:center;margin:32px 0"><a class="card-btn" href="' + (block.url || "#") + '" target="_blank">' + block.label + ' <span class="material-symbols-outlined" style="font-size:1rem;vertical-align:middle">' + (block.icon || "arrow_forward") + '</span></a></div>';
+        default:
+            return "";
+    }
+}
+
+function renderDocSections(sections) {
+    return sections.map(function(sec) {
+        var html = '<section class="docs-section">';
+        if (sec.h2) html += '<h2>' + formatText(sec.h2) + '</h2>';
+        if (sec.p) html += '<p>' + formatText(sec.p) + '</p>';
+        if (sec.ul) {
+            html += '<ul>' + sec.ul.map(function(i) { return '<li>' + formatText(i) + '</li>'; }).join('') + '</ul>';
+        }
+        if (sec.ol) {
+            html += '<ol>' + sec.ol.map(function(i) { return '<li>' + formatText(i) + '</li>'; }).join('') + '</ol>';
+        }
+        if (sec.table) {
+            html += '<div class="blog-table"><table>' + ((sec.table.headers || []).length ? '<thead><tr>' + sec.table.headers.map(function(h) { return '<th>' + formatText(h) + '</th>'; }).join('') + '</tr></thead>' : '') + '<tbody>' + (sec.table.rows || []).map(function(row) { return '<tr>' + row.map(function(c) { return '<td>' + formatText(c) + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody></table></div>';
+        }
+        if (sec.img) {
+            html += '<figure class="docs-figure"><div class="docs-figure-img"><img src="' + sec.img + '" alt="' + (sec.alt || '') + '" loading="lazy" /></div>' + (sec.caption ? '<figcaption class="docs-figure-caption">' + formatText(sec.caption) + '</figcaption>' : '') + '</figure>';
+        }
+        if (sec.guide) {
+            (sec.guide.images || []).forEach(function(item) {
+                html += '<figure class="docs-figure"><div class="docs-figure-img"><img src="' + item.src + '" alt="' + (item.alt || '') + '" loading="lazy"></div>' + (item.caption ? '<figcaption class="docs-figure-caption">' + formatText(item.caption) + '</figcaption>' : '') + '</figure>';
+            });
+        }
+        if (sec.html) {
+            html += sec.html;
+        }
+        if (sec.content) {
+            html += (sec.content || []).map(renderContent).join('');
+        }
+        if (sec.code) {
+            html += '<pre><code>' + sec.code + '</code></pre>';
+        }
+        html += '</section>';
+        return html;
+    }).join('');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var params = new URLSearchParams(window.location.search);
+    var docId = params.get('id');
+    var hero = document.getElementById('docs-hero');
+    var layout = document.getElementById('docs-layout');
+
+    fetch('../docs/manifest.json')
+        .then(function(r) { if (!r.ok) throw new Error('Not found'); return r.json(); })
+        .then(function(manifest) {
+            var nav = document.getElementById('docs-nav-links');
+            var overlayList = document.getElementById('docs-overlay-links');
+            var linksHtml = manifest.items.map(function(doc) {
+                var active = doc.id === docId ? ' class="active"' : '';
+                return '<li><a href="docs.html?id=' + doc.id + '"' + active + '>' + doc.title + '</a></li>';
+            }).join('');
+            nav.innerHTML = linksHtml + '<li class="docs-menu-row"><a href="../index.html" class="docs-back-home">Back to Home</a><button class="mobile-menu-theme" aria-label="Toggle theme"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button></li>';
+            if (overlayList) overlayList.innerHTML = linksHtml + '<li class="docs-menu-row"><a href="../index.html" class="docs-back-home">Back to Home</a><button class="mobile-menu-theme" aria-label="Toggle theme"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button></li>';
+
+            if (docId) {
+                loadDoc(docId, manifest);
+            } else {
+                renderHub(manifest);
+            }
+        })
+        .catch(function() {
+            layout.innerHTML = '<p style="color:var(--muted);text-align:center;padding:60px 0">Documentation not available.</p>';
+        });
+
+    function renderHub(manifest) {
+        hero.style.display = '';
+        layout.innerHTML = manifest.items.map(function(doc) {
+            return '<section class="docs-hub-section" onclick="location.href=\'docs.html?id=' + doc.id + '\'">' +
+                '<h2>' + doc.title + '</h2>' +
+                (doc.summary ? '<p>' + doc.summary + '</p>' : '') +
+            '</section>';
+        }).join('');
+
+        gsap.fromTo('.hero .section-label', { opacity: 0, y: 20 }, { opacity: 1, y: 0, delay: 0.3, duration: 1.2, ease: 'power3.out' });
+        gsap.fromTo('.hero h1', { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out' }, '-=0.8');
+        gsap.fromTo('.docs-hub-section', { opacity: 0, y: 30 }, { opacity: 1, y: 0, stagger: 0.08, duration: 0.6, ease: 'power3.out' });
+    }
+
+    function loadDoc(docId, manifest) {
+        hero.style.display = 'none';
+        var docData = manifest.items.find(function(d) { return d.id === docId; });
+        var idx = manifest.items.indexOf(docData);
+
+        fetch('../docs/' + docId + '.json')
+            .then(function(r) { if (!r.ok) throw new Error('Not found'); return r.json(); })
+            .then(function(doc) {
+                document.title = doc.title + ' — AVI // Docs';
+                var prevBtn = idx > 0 ? '<a href="docs.html?id=' + manifest.items[idx - 1].id + '" class="docs-prev-btn">← Previous: ' + manifest.items[idx - 1].title + '</a>' : '<span></span>';
+                var nextBtn = idx < manifest.items.length - 1 ? '<a href="docs.html?id=' + manifest.items[idx + 1].id + '" class="docs-next-btn">Next: ' + manifest.items[idx + 1].title + ' →</a>' : '<span></span>';
+
+                layout.innerHTML =
+                    '<main class="docs-content">' +
+                        '<span class="section-label">// ' + doc.title + '</span>' +
+                        '<h1 class="docs-title">' + doc.title + '</h1>' +
+                        renderDocSections(doc.sections) +
+                        '<div class="docs-nav-buttons">' + prevBtn + nextBtn + '</div>' +
+                    '</main>';
+            })
+            .catch(function() {
+                layout.innerHTML =
+                    '<main class="docs-content docs-error">' +
+                        '<p>Page not found.</p>' +
+                        '<a href="docs.html" class="card-btn" style="display:inline-block;margin-top:24px">Back to Docs</a>' +
+                    '</main>';
+            });
+    }
+    // Mobile menu overlay toggle
+    var toggle = document.getElementById('docs-menu-toggle');
+    var overlay = document.getElementById('docs-mobile-overlay');
+    var closeBtn = document.getElementById('docs-overlay-close');
+    if (toggle && overlay) {
+        toggle.addEventListener('click', function() {
+            overlay.classList.toggle('open');
+        });
+        closeBtn.addEventListener('click', function() {
+            overlay.classList.remove('open');
+        });
+        overlay.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                overlay.classList.remove('open');
+            }
+        });
+    }
+});

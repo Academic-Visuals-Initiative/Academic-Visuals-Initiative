@@ -1,0 +1,133 @@
+{
+  "title": "How Important is the Look and Feel of Your Academic Website?",
+  "author": "Academic Visuals Initiative",
+  "date": "",
+  "align": "left",
+  "content": [
+    {
+      "type": "hero",
+      "src": "../img/blog/blog3/1.jpg",
+      "alt": "Academic website design",
+      "credit": "Photo by Alphabag on Unsplash"
+    },
+    {
+      "type": "lead",
+      "text": "Most academic websites are built with one quiet assumption: if the information is correct and complete, the job is done."
+    },
+    {
+      "type": "p",
+      "text": "So you end up with a homepage that feels like a digital filing cabinet. Everything is technically in place—publications, CV, projects, teaching experience—but when you land on it, there's often a strange silence. Not an error, not a problem, just a lack of pull. You don't feel invited to stay. You just scan and leave."
+    },
+    {
+      "type": "p",
+      "text": "That gap between 'everything is there' and 'I actually want to explore this' is what we can better describe as the overall impression of the site."
+    },
+    {
+      "type": "p",
+      "text": "This overall impression is not about decoration or flashy design. It is closer to a sense of presence—the immediate feeling a space creates before you consciously start reading anything. In academic websites, this forms within seconds. A visitor doesn't begin by carefully evaluating methodology or citation counts. Instead, they quickly sense whether the page feels alive, current, and worth their time. That judgment happens almost instantly, and often unconsciously."
+    },
+    {
+      "type": "h2",
+      "text": "How Website Design Shapes Academic Perception"
+    },
+    {
+      "type": "p",
+      "text": "When someone lands on an academic website, they are not immediately analyzing content. They are orienting themselves emotionally and visually, trying to understand what kind of space they have entered. In those first few seconds, the brain is asking quiet questions: is this up to date, is this person active in research right now, and does this feel cared for or abandoned."
+    },
+    {
+      "type": "p",
+      "text": "These questions are rarely answered by the publication list or project details. Instead, they are answered by layout, spacing, typography, and overall structure. A website can be rich in content but still feel outdated if it does not signal ongoing attention and presence. This is where the overall impression begins to shape perception, even before any real reading happens."
+    },
+    {
+      "type": "image-full",
+      "src": "../img/blog/7.png",
+      "alt": "Website layout and typography",
+      "caption": "Two academic websites with identical content but different designs."
+    },
+    {
+      "type": "h2",
+      "text": "The Difference Between Information and Experience"
+    },
+    {
+      "type": "p",
+      "text": "Most academic websites focus heavily on information delivery, but visitors do not experience information in isolation. They experience how that information is arranged, connected, and revealed. A list of papers, for example, is purely informational, but it requires the reader to mentally construct meaning and context on their own."
+    },
+    {
+      "type": "p",
+      "text": "When content is instead presented with flow and structure, it becomes easier to follow and naturally more engaging. A research journey that unfolds through connected sections feels very different from a flat archive of outputs. One feels like an active intellectual process, while the other feels like a static record. This difference is subtle but powerful in shaping whether someone continues exploring or leaves after a quick scan."
+    },
+    {
+      "type": "image-full",
+      "src": "../img/blog/5.png",
+      "alt": "Website design comparison",
+      "caption": "Two academic websites with identical content but different data arrangement and design."
+    },
+    {
+      "type": "h2",
+      "text": "Structure Shapes Perception"
+    },
+    {
+      "type": "p",
+      "text": "The way content is structured on a page quietly shapes how the work itself is perceived. When sections feel disconnected, the website feels fragmented, and the research can appear scattered even if it is not. When there is a clear progression from one idea to the next, the work feels more intentional and coherent."
+    },
+    {
+      "type": "p",
+      "text": "A natural flow might move from who the researcher is, to what they are interested in, to what they have worked on, and finally to what they are currently exploring. This kind of structure does not need to be dramatic or narrative-heavy, but it creates continuity. It helps visitors feel that they are moving through a connected research story rather than jumping between isolated pieces of information."
+    },
+    {
+      "type": "image-full",
+      "src": "../img/blog/6.png",
+      "alt": "Research journey flow",
+      "caption": "Two academic websites with identical content but different structures and layouts."
+    },
+    {
+      "type": "h2",
+      "text": "Micro Details Create Trust"
+    },
+    {
+      "type": "p",
+      "text": "Trust in a website is rarely built through content alone. It is often shaped by small visual and interaction details that people notice without actively thinking about them. Clean spacing makes information feel intentional rather than crowded. Consistent typography creates a sense of stability and care. Subtle interactions, like gentle hover effects or smooth transitions, suggest that the site is actively maintained."
+    },
+    {
+      "type": "p",
+      "text": "These elements do not explain the research itself, but they influence how long someone is willing to stay and engage with it. A cluttered or visually inconsistent interface creates friction, while a calm and coherent one reduces it. In environments where attention is limited, even small reductions in friction can significantly affect engagement."
+    },
+    {
+      "type": "image-full",
+      "src": "../img/blog/9.png",
+      "alt": "Interface comparison",
+      "caption": "Two academic websites with identical content, one without and one with micro details."
+    },
+    {
+      "type": "h2",
+      "text": "Why This Overall Impression Matters for Accessibility"
+    },
+    {
+      "type": "p",
+      "text": "At a deeper level, this overall impression is not about aesthetics—it is about accessibility in a human sense. It determines how easily someone can enter your work without feeling overwhelmed or disoriented. If a website feels difficult to navigate or mentally heavy to approach, many visitors will leave before fully engaging, regardless of how strong the content is."
+    },
+    {
+      "type": "p",
+      "text": "This becomes especially important in academic contexts, where audiences are often interdisciplinary. Not every visitor shares the same technical background, so the website must act as a bridge rather than a barrier. A strong overall impression makes that bridge feel natural, allowing people to step into the work gradually rather than forcing them to decode it all at once."
+    },
+    {
+      "type": "image-full",
+      "src": "../img/blog/8.png",
+      "alt": "Interdisciplinary accessibility",
+      "caption": "Two academic websites with identical content without and with improvements."
+
+    },
+    {
+      "type": "h2",
+      "text": "Final Thought"
+    },
+    {
+      "type": "p",
+      "text": "An academic website is often the first real point of contact between a researcher and the outside world. Before anyone reads a paper or evaluates a project, they experience the site itself and form a sense of what kind of researcher they are dealing with."
+    },
+    {
+      "type": "p",
+      "text": "The real question, then, is not whether the website is complete or accurate. It is whether it feels open enough for someone to enter without hesitation. Because ultimately, the overall impression of your website is not about decoration or style—it is about whether your work feels approachable enough for people to stay, explore, and understand it."
+    }
+  ]
+}

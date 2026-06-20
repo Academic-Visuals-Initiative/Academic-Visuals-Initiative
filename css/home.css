@@ -68,7 +68,6 @@
   grid-row: 1 / 3;
   background: var(--accent);
   color: white;
-  justify-content: flex-end;
 }
 
 [data-theme="dark"] .card-open-source {

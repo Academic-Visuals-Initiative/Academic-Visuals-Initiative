@@ -1,0 +1,29 @@
+{
+  "title": "Templates",
+  "sections": [
+    {
+      "content": [
+        { "type": "h2", "text": "Personal Website" },
+        { "type": "p", "text": "Designed for individual researchers and faculty members. Includes sections for bio, publications, teaching, and contact information." }
+      ]
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "Lab Portal" },
+        { "type": "p", "text": "A multi-page template for research groups. Features team member profiles, project showcases, and publication feeds." }
+      ]
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "Project Page" },
+        { "type": "p", "text": "A single-page layout for highlighting a specific research project. Includes timeline, collaborators, and grants sections." }
+      ]
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "Academic CV" },
+        { "type": "p", "text": "A minimal, print-friendly template for professional portfolios and academic job applications." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+   "title":"Glossary of Terms",
+   "sections":[
+      {
+         "content":[
+            {
+               "type":"h2",
+               "text":"Glossary of Terms"
+            },
+            {
+               "type":"p",
+               "text":"As you build your website, you will encounter some technical terms. Refer to this list whenever you see a word you do not recognize."
+            }
+         ]
+      },
+      {
+         "table":{
+            "headers":[
+               "Term",
+               "Simple Definition"
+            ],
+            "rows":[
+               [
+                  "Web Browser",
+                  "The software application you open to view pages on the internet. Examples include Chrome, Safari, and Edge."
+               ],
+               [
+                  "Search Engine",
+                  "A specialized website (like Google or Bing) that helps you find other websites by typing in keywords."
+               ],
+               [
+                  "URL (Web Address)",
+                  "The unique text you type to go directly to a website (e.g., www.google.com)."
+               ],
+               [
+                  "Address Bar",
+                  "The long, white text box at the very top of your browser window where the URL is displayed."
+               ],
+               [
+                  "Server",
+                  "A powerful computer, located far away, that stays turned on 24 hours a day to store website files and send them to visitors."
+               ],
+               [
+                  "Web Hosting",
+                  "The service of storing your website's files on a server so the public can access them."
+               ],
+               [
+                  "GitHub",
+                  "A website that provides free hosting for web files and code."
+               ],
+               [
+                  "Repository (or Repo)",
+                  "A dedicated folder inside your GitHub account that holds all the files for one specific website project."
+               ],
+               [
+                  "Fork",
+                  "The process of making an exact copy of someone else's GitHub repository (folder) and placing it into your own GitHub account so you can edit it."
+               ],
+               [
+                  "Workspace",
+                  "A digital desktop or area where you can safely edit and test your website's files without changing the live, public version of your website until you are ready."
+               ],
+               [
+                  "Version",
+                  "A saved state of your website files at a specific point in time. Much like having 'Draft 1' and 'Draft 2' of a document, it allows you to keep track of changes and go back to an older setup if you make a mistake."
+               ],
+               [
+                  "Branch",
+                  "A version or 'workspace' within a repository. A repository can have multiple branches, each containing different versions of the website's files."
+               ],
+               [
+                  "JSON",
+                  "Short for JavaScript Object Notation. It is a simple text format used to store information. It looks like a list of labels and answers (for example: \"name\": \"Jane\"), making it easy to edit your website's content without writing complex code."
+               ],
+               [
+                  "Commit",
+                  "The process of saving your changes to your files on GitHub."
+               ],
+               [
+                  "Domain name",
+                  "The unique, user-friendly address people type into a browser to find your website on the internet. Such as (google.com)"
+               ]
+            ]
+         }
+      }
+   ]
+}

@@ -1,0 +1,53 @@
+{
+   "title":"Before Creating an Account",
+   "sections":[
+      {
+         "content":[
+            {
+               "type":"h2",
+               "text":"Importance of Username Selection"
+            },
+            {
+               "type":"lead",
+               "text":"~•~ While you can change your username later, doing so will break existing repository links. Therefore, it is highly recommended to choose a professional and permanent username from the start."
+            },
+            {
+               "type":"h2",
+               "text":"The Risk of Changing Usernames"
+            },
+            {
+               "type":"lead",
+               "text":"~•~ If you decide to change your GitHub username in the future, any active GitHub Pages website URLs will change immediately. This will lead your previous links to be invalid. Making them inaccessible."
+            },
+            {
+               "type":"h2",
+               "text":"How GitHub Pages URLs Work"
+            },
+            {
+               "type":"lead",
+               "text":"~•~ GitHub Pages uses a standard naming convention to create URLs directly from your username and repository(folder) name. https://username.github.io/repository-name. <br>~•~ As an example if you use JohnDoe as your username and project1 as your repository name, the URL will be: https://JohnDoe.github.io/project1. ==However there is a exception when you are using your username as your repository name, in that case the URL will be: https://JohnDoe.github.io== <br>**~•~ Recommended Practice: **"
+            },
+            {
+               "type":"ol",
+               "level":3,
+               "items":[
+                  "**Your Personal/Academic Website:** For your primary website it is recommended to use a repository named same as your user name.  This way you can have Cleaner shorter website URL for your personal website. URL will be: https://username.github.io. ",
+                  "**Project Websites:** If you create separate websites for specific project, they can be continued under your main domain: https://username.github.io/repo (folder) name"
+               ]
+            },
+            {
+               "type":"p",
+               "text":"**Note on Professionalism:** If your username is informal or difficult to spell, your professional academic website URL will inherit those traits. For example, https://JohnDoe.github.io is generally preferred on an academic CV over https://techcoder99.github.io."
+            },
+            {
+               "type":"h2",
+               "text":"Email - Institutional or Personal"
+            },
+            {
+               "type":"lead",
+               "text":"~•~ I am recommending you to use your personal email address. Since it ensures long-term ownership and access to your account regardless of your institutional affiliation. <br> On the other hand you may require additional verifications to prove your academic status."
+            }
+         ]
+      }
+   ]
+}

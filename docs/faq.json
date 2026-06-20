@@ -1,0 +1,29 @@
+{
+  "title": "Frequently Asked Questions",
+  "sections": [
+    {
+      "content": [
+        { "type": "h2", "text": "Do I need to know Git or coding?" },
+        { "type": "p", "text": "Basic copy/paste helps, but you only need to edit the data.json file. A video tutorial is available showing exactly where to paste your text and images." }
+      ]
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "Can I host this on my university server?" },
+        { "type": "p", "text": "Yes. Since it's just HTML/CSS/JS, you can zip the folder and upload it to any university web hosting service." }
+      ]
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "Can you set me up for it?" },
+        { "type": "p", "text": "Yes, I'd love to help! Send a message and I'll check my availability. I do this for free, though donations are welcome." }
+      ]
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "Is this as good as a custom-coded website?" },
+        { "type": "p", "text": "For 80% of scholars — yes. For advanced features you'd need a developer, but AVI templates are specifically designed for academic use cases." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+   "title":"Set Up Account & Log In",
+   "sections":[
+      {
+         "content":[
+            {
+               "type":"h2",
+               "text":"1: Navigate to GitHub"
+            },
+            {
+               "type":"p",
+               "text":":1: . Open your web browser and go to the address bar. Type `github.com` and press Enter . "
+            },
+            {
+               "type":"image-full",
+               "src":"../docs/img/1.png",
+               "alt":"GitHub search result",
+               "caption":"Search for GitHub by typing 'github.com' in the search bar or address bar and pressing Enter."
+            },
+            {
+               "type":"p",
+               "text":":2: . Alternatively, search for GitHub on search field and click the official link `https://github.com` ."
+            },
+            {
+               "type":"image-full",
+               "src":"../docs/img/2.png",
+               "alt":"GitHub search result",
+               "caption":"Search for GitHub by typing 'GitHub' in the search field and clicking the official link `https://github.com` from search results."
+            },
+            {
+               "type":"h2",
+               "text":"2: Signing up for a GitHub account"
+            },
+            {
+               "type":"hc",
+               "text":":3: - Once on the GitHub homepage, locate the sign-up options. Click the green ==Sign up for GitHub== button in the center of the page or ==Sign up== button in the top-right corner of the homepage.",
+               "weight":100,
+               "size":"1rem",
+               "top":"12px",
+               "bot":"12px"
+            },
+            {
+               "type":"image-full",
+               "src":"../docs/img/3.png",
+               "alt":"GitHub search result",
+               "caption":"Click the Sign up button on the top right or the center of the GitHub homepage. (2026 Interface)"
+            },
+            {
+               "type":"hc",
+               "text":":4: - Input Credentials.",
+               "weight":400,
+               "size":"1rem",
+               "top":"1px",
+               "bot":"12px"
+            },
+            {
+               "type":"ol",
+               "level":3,
+               "items":[
+                  "Enter your email:Type your email address in the input box.",
+                  "Create a password:Choose a password that meets GitHub's strength requirements: at least 15 characters long, or at least 8 characters with a mix of numbers and lowercase letters. ",
+                  "Enter a username:Type your chosen username. Make sure to read  **Before Creating an Account * docs.html?id=before-creating-account** since username can affect your website in long-term. The system will check availability in real-time. If available, a green checkmark will appear.",
+                  "select your country/region from the dropdown menu.",
+                  "Click create account button to proceed."
+               ]
+            },
+            {
+               "type":"image-full",
+               "src":"../docs/img/4.png",
+               "alt":"GitHub search result",
+               "caption":"Enter your email, create a password, choose a username, select your country/region, and click the Create account button to proceed."
+            },
+            {
+               "type":"h2",
+               "text":"3: Complete the Account Verification."
+            },
+            {
+               "type":"hc",
+               "text":":5: -  Choose the appropriate verification method for you. ",
+               "weight":400,
+               "size":"1rem",
+               "top":"18px",
+               "bot":"12px"
+            },
+            {
+               "type":"ul",
+               "level":3,
+               "items":[
+                  "GitHub requires users to complete a visual or audio puzzle to confirm they are not automated bots. Click on either the visual or audio option to proceed."
+               ]
+            },
+            {
+               "type":"image-full",
+               "src":"../docs/img/5.png",
+               "alt":"GitHub sign up button",
+               "caption":"Choose the appropriate verification method for you. Click on either the visual or audio option to proceed."
+            },
+            {
+               "type":"hc",
+               "text":":6: -  Complete the verification process. ",
+               "weight":400,
+               "size":"1rem",
+               "top":"18px",
+               "bot":"12px"
+            },
+            {
+               "type":"ul",
+               "level":3,
+               "items":[
+                  "Complete the prompt (for example, rotating an image to the correct orientation or selecting matching patterns). and click submit to proceed.",
+                  "Once successfully verified, An email will be sent to your provided email address containing an 8-digit numerical code. "
+               ]
+            },
+            {
+               "type":"image-full",
+               "src":"../docs/img/6.png",
+               "alt":"GitHub sign up button",
+               "caption":"Complete the verification process by following the instructions and clicking submit to proceed."
+            },
+            {
+               "type":"hc",
+               "text":":7: -  Confirm Your Email and Finish Setup. ",
+               "weight":400,
+               "size":"1rem",
+               "top":"18px",
+               "bot":"12px"
+            },
+            {
+               "type":"ul",
+               "level":3,
+               "items":[
+                  "Open your email client and find the confirmation email from GitHub.",
+                  "The email contains an 8-digit numerical code (e.g., 1234-5678).",
+                  "Enter these numbers into the verification boxes on the GitHub page.",
+                  "click the continue button to complete the account setup process.",
+                  "Incase you do not receive the email within a few minutes, check your spam or junk folder. If you still cannot find it, you can request a new verification email from GitHub. by clicking the 'Resend verification email' link below the continue button."
+               ]
+            },
+            {
+               "type":"image-full",
+               "src":"../docs/img/7.png",
+               "alt":"GitHub sign up button",
+               "caption":"Enter the 8-digit code from the confirmation email into the verification boxes on the GitHub page and click the continue button to complete the account setup process."
+            },
+            {
+               "type":"h2",
+               "text":"4: After Finishing Setup"
+            },
+            {
+               "type":"ul",
+               "level":4,
+               "items":[
+                  "After continuing, you will be automatically redirected to the login page where you can log in to your new GitHub account to continue."
+               ]
+            },
+            {
+               "type":"image-full",
+               "src":"../docs/img/8.png",
+               "alt":"GitHub sign up button",
+               "caption":"Log in to your new GitHub account using the credentials you provided during the sign-up process to continue."
+            },
+            {
+               "type":"h2",
+               "text":"5: Log In to Your Account"
+            },
+            {
+               "type":"ul",
+               "level":4,
+               "items":[
+                  "To log in for a new session, you can go to the GitHub homepage and click the 'Sign in' button located at the top right corner of the page.",
+                  "This will take you to the login page where you can enter your username/email and password to access your account."
+               ]
+            },
+            {
+               "type":"image-full",
+               "src":"../docs/img/9.png",
+               "alt":"GitHub sign up button",
+               "caption":"click the 'Sign in' button located at the top right corner of the page."
+            },
+            {
+               "type":"ul",
+               "level":4,
+               "items":[
+                  "enter your username/email and password and click the 'Sign in' button to log in to your GitHub account",
+                  "Incase if you forget your password, you can click the 'Forgot password?' link on the login page to reset it. Follow the instructions provided to regain access to your account."
+
+               ]
+            },
+            {
+               "type":"image-full",
+               "src":"../docs/img/10.png",
+               "alt":"GitHub sign up button",
+               "caption":"Enter your username/email and password and click the 'Sign in' button to log in to your GitHub account. "
+            }
+         ]
+      }
+   ]
+}

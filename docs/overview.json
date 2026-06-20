@@ -1,0 +1,46 @@
+{
+   "title":"Overview",
+   "sections":[
+      {
+         "content":[
+            {
+               "type":"h2",
+               "text":"Welcome! Let's get started with your website."
+            },
+            {
+               "type":"p",
+               "text":"As mentioned, having a digital presence should not be limited by budgets, institutions, technical expertise, design expertise, or anything of the sort. Therefore, this guide is designed for everyone those who want to create their own website but have never tried to create any onlie presence, written code or worked with GitHub."
+            },
+            {
+               "type":"p",
+               "text":"Instead of building a website from scratch using complex programming languages, you will use a pre-designed website template. By simply 'copying' this template and filling in your own information, you will have a live, personalized website on the internet in just a few steps."
+            },
+            {
+               "type":"p",
+               "text":"Think of this process like filling out an online form or customizing a social media profile page. The technical structure and design of the website are already built for you. Your job is simply to swap out the placeholder information with your own."
+            }
+         ]
+      },
+      {
+         "content":[
+            {
+               "type":"h2",
+               "text":"Next Steps"
+            },
+            {
+               "type":"ol",
+               "level":3,
+               "items":[
+                  "**Learn about requirements:** Check the prerequisites to make sure you have everything you need. ",
+                  " **Get familiar with some terms:** Review the vocabulary to get familiar with words you'll encounter and understand key concepts before you start.",
+                  "**Create and Log In:** Set up a free GitHub account and log in (or log into your existing one).",
+                  "**Choose Your Design:** Select the specific layout or design style you prefer.",
+                  "**Copy the Design:** Make a personal copy of the folder that contains the website design.",
+                  "**Add Your Details:** Replace the placeholder template text with your own information.",
+                  "**Save and Launch:** Save your changes and view your live website on the internet."
+               ]
+            }
+         ]
+      }
+   ]
+}

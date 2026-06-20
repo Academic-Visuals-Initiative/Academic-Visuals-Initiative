@@ -1,0 +1,346 @@
+/* ============================================
+   AURA // NEXUS - MANIFESTO PAGE STYLES
+   ============================================ */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+}
+
+
+/* --- Horizon Hero --- */
+.horizon-hero {
+    padding: 200px 0 50px;
+    text-align: center;
+}
+
+.horizon-hero h1 {
+    font-size: 5.5rem;
+    font-weight: 800;
+    font-family: var(--sans);
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+    margin-bottom: 16px;
+}
+
+.horizon-hero p {
+    font-size: 1.4rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    max-width: 650px;
+    margin: 0 auto;
+    letter-spacing: -0.01em;
+}
+
+/* --- Longevity Grid --- */
+.longevity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    padding: 50px 0 100px;
+    align-items: center;
+}
+
+.year-ticker {
+    font-family: var(--mono);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ticker-404 {
+    font-size: 8rem;
+    font-weight: 800;
+    color: var(--ink);
+    line-height: 1;
+}
+
+.ticker-msg {
+    font-size: 2rem;
+    color: var(--muted);
+    line-height: 1.1;
+    margin-top: 8px;
+}
+
+.longevity-text h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: var(--sans);
+    letter-spacing: -0.04em;
+    margin-bottom: 20px;
+}
+
+.longevity-text p {
+    color: var(--muted);
+    margin-bottom: 24px;
+    line-height: 1.6;
+    font-family: var(--sans);
+}
+
+.longevity-text b {
+    color: var(--ink);
+    font-family: var(--sans);
+}
+
+/* --- Literacy Grid --- */
+.literacy-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    padding: 100px 0;
+    align-items: stretch;
+    border-top: 1px solid var(--border);
+}
+
+.literacy-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hub-header {
+    max-width: 800px;
+}
+
+.hub-header h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.hub-header p {
+    font-size: 1.25rem;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.guides-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.guide-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-align: left;
+}
+
+.guide-card:hover {
+    border-color: var(--accent);
+    background: var(--bg);
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.03);
+}
+
+.guide-card .card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.guide-card .card-meta h3 {
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.guide-card .card-meta svg {
+    color: var(--muted);
+    flex-shrink: 0;
+}
+
+.guide-card p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.preview-panel {
+    background: transparent;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.preview-panel:hover {
+    transform: scale(1.03);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.preview-image-holder {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.preview-image-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(100%);
+    transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.preview-panel:hover .preview-image-holder img {
+    filter: grayscale(0%);
+}
+
+/* --- Gap Box / Data Table --- */
+.gap-box {
+    padding: 60px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.gap-box h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: -0.04em;
+}
+
+.l02-header {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.l02-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
+    line-height: 1.1;
+}
+
+.l02-header p {
+    font-size: 1.1rem;
+    color: var(--muted);
+}
+
+.l02-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.num {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.l02-column {
+    text-align: center;
+}
+
+.l02-column h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 12px;
+}
+
+.l02-column p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.data-row {
+    display: grid;
+    grid-template-columns: 140px 1fr 1fr;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.data-row:last-child {
+    border-bottom: none;
+}
+
+.data-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 3px;
+}
+
+.data-item b {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.data-item p {
+    font-size: 0.8rem;
+    color: var(--muted);
+    padding-right: 20px;
+    line-height: 1.4;
+}
+
+.data-item.nexus {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.data-item.nexus p {
+    color: var(--ink);
+    opacity: 0.7;
+}
+
+[data-theme="dark"] .data-item.nexus p {
+    opacity: 0.6;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .horizon-hero h1 {
+        font-size: 3rem;
+    }
+    .longevity-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .year-ticker {
+        font-size: 5rem;
+    }
+    .literacy-grid {
+        grid-template-columns: 1fr;
+    }
+    .preview-panel {
+        min-height: 250px;
+    }
+    .preview-image-holder {
+        min-height: 250px;
+    }
+    .data-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .l02-row {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

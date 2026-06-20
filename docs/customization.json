@@ -1,0 +1,29 @@
+{
+  "title": "Customization",
+  "sections": [
+    {
+      "content": [
+        { "type": "h2", "text": "Colors" },
+        { "type": "p", "text": "You can customize the color scheme by editing the CSS variables in `css/global.css`. The `--accent` variable controls the primary blue color used across the site." }
+      ]
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "Fonts" },
+        { "type": "p", "text": "The site uses Plus Jakarta Sans for headings and body text, JetBrains Mono for code, and Space Mono for the footer. These can be changed in the `global.css` variables." }
+      ]
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "Layout" },
+        { "type": "p", "text": "Each page uses CSS Grid for layout. You can adjust column widths, spacing, and positioning by modifying the grid properties in the respective CSS files." }
+      ]
+    },
+    {
+      "content": [
+        { "type": "h2", "text": "Dark Mode" },
+        { "type": "p", "text": "The site supports dark mode out of the box. Colors are defined using CSS variables that change based on the `data-theme` attribute. You can add new dark mode overrides in the CSS." }
+      ]
+    }
+  ]
+}

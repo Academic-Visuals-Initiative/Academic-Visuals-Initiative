@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "next": "prerequisites",
+      "summary": "Welcome and overview of building your academic website."
+    },
+    {
+      "id": "prerequisites",
+      "title": "Prerequisites",
+      "prev": "overview",
+      "next": "glossary",
+      "summary": "What you need before getting started — computer, internet, and email."
+    },
+    {
+      "id": "glossary",
+      "title": "Glossary of Terms",
+      "prev": "prerequisites",
+      "next": "getting-started",
+      "summary": "Simple definitions of technical terms you'll encounter."
+    },
+    {
+      "id": "getting-started",
+      "title": "Getting Online",
+      "prev": "glossary",
+      "next": "before-creating-account",
+      "summary": "Step-by-step guide to creating your website from scratch."
+    },
+    {
+      "id": "before-creating-account",
+      "title": "Before Creating an Account",
+      "prev": "getting-started",
+      "next": "set-up-account",
+      "summary": "Things to know and have ready before signing up for GitHub."
+    },
+    {
+      "id": "set-up-account",
+      "title": "Set Up Account & Log In",
+      "prev": "before-creating-account",
+      "next": "project-structure",
+      "summary": "Open your browser, navigate to GitHub, and start the sign-up process."
+    },
+    {
+      "id": "project-structure",
+      "title": "Project Structure",
+      "prev": "set-up-account",
+      "next": "customization",
+      "summary": "Understand the file and folder layout of your template."
+    },
+    {
+      "id": "customization",
+      "title": "Customization",
+      "prev": "project-structure",
+      "next": "deployment",
+      "summary": "Change colors, fonts, layout, and dark mode settings."
+    },
+    {
+      "id": "deployment",
+      "title": "Deployment",
+      "prev": "customization",
+      "next": "templates",
+      "summary": "Go live with GitHub Pages or your university server."
+    },
+    {
+      "id": "templates",
+      "title": "Templates",
+      "prev": "deployment",
+      "next": "faq",
+      "summary": "Explore available templates for different academic use cases."
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "prev": "templates",
+      "summary": "Common questions about using and customizing AVI templates."
+    }
+  ]
+}

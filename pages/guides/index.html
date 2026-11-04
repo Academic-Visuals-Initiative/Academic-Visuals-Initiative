@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guides</title>
+    <meta name="description" content="Digital literacy guides for researchers — practical help with the digital side of academic life.">
+    <link rel="icon" type="image/svg+xml" href="../../logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/global.min.css?v=7">
+    <link rel="stylesheet" href="../../css/initiative.css?v=3">
+    <link rel="stylesheet" href="../../css/guides.css">
+    <script>if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark')}</script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+</head>
+<body>
+
+    <nav>
+        <a href="../../index.html" class="logo"><img src="../../logo.svg" alt="Logo" style="height: 40px; width: auto;"> <span class="logo-full">Academic Visuals <span>Initiative</span></span><span class="logo-short">AVI</span></a>
+        <ul class="nav-links desktop-nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../gallery/">Designs</a></li>
+            <li><a href="../blog/">Blog</a></li>
+        </ul>
+        <button class="nav-icon-btn desktop-only" aria-label="Toggle theme"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="theme-nav-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+        <a href="../../index.html" class="back-btn mobile-only"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></a>
+    </nav>
+    <button class="theme-float mobile-only" aria-label="Toggle theme"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="theme-float-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+
+    <div class="container">
+
+        <header class="hero" style="padding-bottom: 40px;">
+            <span class="section-label">// Guides</span>
+            <h1>Zero to Live<br>in 10 Minutes.</h1>
+        </header>
+
+    <section class="initiative-statement">
+        <p class="statement-main">As a researcher, educator, or student, your mental energy and time is your most precious resource. If you don't have the time or if you don't enjoy coding or designing, you shouldn't have to learn them to share your findings.</p>
+        <p class="statement-body">We use a human-readable text-based format for organizing and storing data called JSON which you do not need programming knowledge to master. The markup features simple, descriptive keys, allowing you to swap out values directly inside a standard text editor, or directly in GitHub, save, and launch instantly.</p>
+    </section>
+
+    <div class="try-prompt show" id="tryPrompt">
+        Check it yourself, click and edit any value on left JSON file to edit!
+    </div>
+
+    <div class="workspace-grid">
+        
+        <div class="workspace-card editor-side">
+            <div class="card-topbar">
+                <div class="topbar-dots">
+                    <div class="topbar-dot"></div>
+                    <div class="topbar-dot"></div>
+                    <div class="topbar-dot"></div>
+                </div>
+                <span>profile.json</span>
+            </div>
+            <div class="editor-content">
+                <span class="json-bracket">{</span><br>
+                &nbsp;&nbsp;<span class="json-key">"academic_name"</span>: <span class="json-string">"</span><input type="text" id="inputName" class="json-input pulse-input" value="" size="18"><span class="json-string">"</span>,<br>
+                
+                &nbsp;&nbsp;<span class="json-key">"role"</span>: <span class="json-string">"</span><input type="text" id="inputRole" class="json-input pulse-input" value="" size="31"><span class="json-string">"</span>,<br>
+                
+                &nbsp;&nbsp;<span class="json-key">"biography"</span>: <span class="json-string">"</span><input type="text" id="inputBio" class="json-input pulse-input" value="Exploring molecular dynamics and structural biology at nanoscale resolutions." size="45"><span class="json-string">"</span>,<br>
+                
+                &nbsp;&nbsp;<span class="json-key">"latest_paper"</span>: <span class="json-bracket">{</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="json-key">"title"</span>: <span class="json-string">"</span><input type="text" id="inputPubTitle" class="json-input" value="Nanoscale dynamics of viral envelopes" size="33"><span class="json-string">"</span>,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="json-key">"journal"</span>: <span class="json-string">"</span><input type="text" id="inputPubJournal" class="json-input" value="Nature Biophysics" size="16"><span class="json-string">"</span><br>
+                &nbsp;&nbsp;<span class="json-bracket">}</span><br>
+                <span class="json-bracket">}</span>
+            </div>
+        </div>
+
+        <div class="workspace-card preview-side">
+            <div class="card-topbar">
+                <span>Generated Portfolio Output</span>
+                <span class="compiler-status" id="statusBadge">
+                    <span class="status-pulse"></span>
+                    <span id="statusText">Live Compiled</span>
+                </span>
+            </div>
+
+            <div class="rendered-output">
+                <h3 class="rendered-name" id="viewName">Dr. Clara Sterling</h3>
+                <div class="rendered-title" id="viewRole">Associate Professor, Biophysics</div>
+                <p class="rendered-bio" id="viewBio">Exploring molecular dynamics and structural biology at nanoscale resolutions.</p>
+                
+                <div class="publication-badge">
+                    <div class="pub-info">
+                        <span class="pub-title" id="viewPubTitle">Nanoscale dynamics of viral envelopes</span>
+                        <span class="pub-meta" id="viewPubJournal">Published in Nature Biophysics</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" aria-hidden="true" size="18" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <section class="guides-stub">
+            <p>The step-by-step guides live in the documentation: setting up an account, editing your content, customising the design and going live.</p>
+            <div class="guides-stub-actions">
+                <a href="../docs/" class="btn-primary">Read the Documentation</a>
+                <a href="../templates/" class="btn-secondary">See the Templates</a>
+            </div>
+        </section>
+
+        <footer>
+            <span>&copy; 2026 Academic Visuals Initiative (AVI). Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color: inherit; text-decoration: underline;">CC BY-NC-SA 4.0</a>.</span>
+            <div class="footer-links">
+                <a href="../docs/">GUIDE</a>
+                <a href="https://github.com/Academic-Visuals-Initiative">GitHub</a>
+                <a href="../credits/">CREDITS</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../../js/global.min.js?v=2"></script>
+    <script src="../../js/guides.js?v=5"></script>
+</body>
+</html>

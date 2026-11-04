@@ -1,0 +1,123 @@
+/* ============================================
+   AURA // NEXUS - FAQ PAGE STYLES
+   Styles specific to faq.html & faqpage.html
+   ============================================ */
+
+/* FAQ Page Layout */
+.faq-page {
+  padding: 40px 0 80px;
+  border-top: none;
+}
+
+.faq-page .faq-header {
+  margin: 0 auto 50px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.faq-page .faq-header h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -2px;
+}
+
+.faq-page .faq-container {
+  border-top: 1px solid var(--border);
+}
+
+.faq-page .faq-item {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s ease;
+}
+
+.faq-page .faq-item:hover {
+  background: var(--surface);
+}
+
+.faq-page .faq-trigger {
+  width: 100%;
+  padding: 32px 0;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  color: var(--ink);
+}
+
+.faq-page .faq-question {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  transition: color 0.3s;
+}
+
+.faq-page .faq-item.active .faq-question {
+  color: var(--accent);
+}
+
+.faq-page .faq-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-page .faq-icon::before,
+.faq-page .faq-icon::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-page .faq-icon::before {
+  width: 100%;
+  height: 2px;
+}
+
+.faq-page .faq-icon::after {
+  width: 2px;
+  height: 100%;
+  transition: transform 0.4s;
+}
+
+.faq-page .faq-item.active .faq-icon {
+  transform: rotate(135deg);
+}
+
+.faq-page .faq-item.active .faq-icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq-page .faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s;
+}
+
+.faq-page .faq-inner {
+  padding-bottom: 32px;
+  max-width: 800px;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* ============================================
+   FAQ PAGE RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .faq-page .faq-header h2 {
+    font-size: 3rem;
+  }
+  .faq-page .faq-question {
+    font-size: 1.1rem;
+    padding-right: 20px;
+  }
+}

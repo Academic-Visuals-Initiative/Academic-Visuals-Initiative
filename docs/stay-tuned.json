@@ -1,0 +1,17 @@
+{
+   "title":"Stay Tuned",
+   "sections":[
+      {
+         "content":[
+            {
+               "type":"lead",
+               "text":"Stay tuned for updates."
+            },
+            {
+               "type":"p",
+               "text":"I'm currently a bit busy with graduate school applications, but more guide pages are on the way. Check back soon."
+            }
+         ]
+      }
+   ]
+}

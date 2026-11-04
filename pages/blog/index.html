@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <meta name="description" content="Read the AVI blog for guides on academic websites, GitHub Pages, digital presence for researchers, and free web design tips.">
+    <link rel="icon" type="image/svg+xml" href="../../logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/global.min.css?v=7">
+    <link rel="stylesheet" href="../../css/blog.css">
+    <link rel="stylesheet" href="../../css/blog/globalblog.css">
+    <script>if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark')}</script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+</head>
+<body>
+
+    <nav>
+        <a href="../../index.html" class="logo"><img src="../../logo.svg" alt="Logo" style="height: 40px; width: auto;"> <span class="logo-full">Academic Visuals <span>Initiative</span></span><span class="logo-short">AVI</span></a>
+        <ul class="nav-links desktop-nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../gallery/">Designs</a></li>
+            <li><a href="../blog/">Blog</a></li>
+        </ul>
+        <button class="nav-icon-btn desktop-only"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="theme-nav-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+
+        <a href="../../index.html" class="back-btn mobile-only"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></a>
+    </nav>
+    <button class="theme-float mobile-only"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="theme-float-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+
+    <div class="container" id="app">
+        <header class="hero" id="blog-hero">
+            <span class="section-label">// Blog</span>
+            <h1 id="hero-title">Latest from<br>the initiative.</h1>
+            <div class="filter-bar" id="blog-filter-bar">
+                <button class="filter-tag active" data-filter="all">All</button>
+                <button class="filter-tag" data-filter="announcement">Announcements</button>
+                <button class="filter-tag" data-filter="community">Community</button>
+                <button class="filter-tag" data-filter="guide">Guides</button>
+            </div>
+        </header>
+
+        <div id="blog-content">
+            <div class="blog-list" id="blog-list"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer>
+            <span>&copy; 2026 Academic Visuals Initiative (AVI). Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color: inherit; text-decoration: underline;">CC BY-NC-SA 4.0</a>.</span>
+            <div class="footer-links">
+                <a href="../docs/">GUIDE</a>
+                <a href="https://github.com/Academic-Visuals-Initiative">GitHub</a>
+                <a href="../credits/">CREDITS</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="../../js/global.min.js?v=2" defer></script>
+    <script src="../../js/blog.min.js?v=2" defer></script>
+</body>
+</html>
+
+

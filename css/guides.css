@@ -1,0 +1,23 @@
+/* ============================================
+   AVI - GUIDES PAGE
+   ============================================ */
+
+.guides-stub {
+  max-width: 640px;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+
+.guides-stub p {
+  margin-bottom: 32px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.guides-stub-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}

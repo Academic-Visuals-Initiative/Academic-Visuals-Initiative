@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "id": "minimal-001",
+      "ref": "minimal_001",
+      "title": "Personal Website",
+      "category": "personal",
+      "image": "img/Gallery/1.jpg",
+      "demo": "https://demominimal001.academicvisualsinitiative.org/",
+      "repo": "https://github.com/new?template_owner=Academic-Visuals-Initiative&template_name=minimal_001&owner=%40me&visibility=public",
+      "featured": true
+    },
+    {
+      "id": "group-001",
+      "ref": "group_001",
+      "title": "Project Showcase",
+      "category": "projects",
+      "image": "img/Gallery/1.jpg",
+      "demo": "https://demogroup001.academicvisualsinitiative.org/",
+      "repo": "https://github.com/new?template_owner=Academic-Visuals-Initiative&template_name=group_001&owner=%40me&visibility=public",
+      "featured": true
+    },
+    {
+      "id": "ref-305",
+      "ref": "REF_305",
+      "title": "Stay Tuned for More",
+      "category": "cvs",
+      "image": "img/Gallery/1.jpg",
+      "demo": "#",
+      "repo": "#",
+      "upcoming": true,      
+      "featured": true
+    }
+  ]
+}

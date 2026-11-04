@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — AVI</title>
+    <meta name="description" content="Page not found.">
+    <link rel="icon" type="image/svg+xml" href="/logo.svg">
+    <script>if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark')}</script>
+    <style>
+        @font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+        :root{--bg:#ffffff;--ink:#000000;--accent:#2563eb;--muted:#6b7280}
+        [data-theme=dark]{--bg:#050505;--ink:#ffffff;--accent:#d9ff00;--muted:#9ca3af}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100dvh;text-align:center;padding:40px 20px;transition:background .2s,color .2s;animation:fadeUp .6s ease-out}
+        h1{font-size:8rem;font-weight:800;line-height:1;letter-spacing:-.08em;color:var(--accent);margin-bottom:8px;animation:pulse 3s ease-in-out infinite}
+        p{font-size:1.1rem;color:var(--muted);line-height:1.6;margin-bottom:32px;max-width:500px;animation:fadeUp .6s ease-out .15s both}
+        a{display:inline-block;padding:14px 32px;background:var(--ink);color:var(--bg);border-radius:12px;font-weight:700;text-decoration:none;transition:.2s;animation:fadeUp .6s ease-out .3s both}
+    </style>
+</head>
+<body>
+    <h1>404</h1>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <a href="/">Back to Home</a>
+</body>
+</html>

@@ -5,7 +5,7 @@
       "ref": "minimal_001",
       "title": "Personal Website",
       "category": "personal",
-      "image": "img/Gallery/1.jpg",
+      "image": "img/Gallery/minimal001.jpg",
       "demo": "https://demominimal001.academicvisualsinitiative.org/",
       "repo": "https://github.com/new?template_owner=Academic-Visuals-Initiative&template_name=minimal_001&owner=%40me&visibility=public",
       "featured": true
@@ -15,7 +15,7 @@
       "ref": "group_001",
       "title": "Project Showcase",
       "category": "projects",
-      "image": "img/Gallery/1.jpg",
+      "image": "img/Gallery/group001.jpg",
       "demo": "https://demogroup001.academicvisualsinitiative.org/",
       "repo": "https://github.com/new?template_owner=Academic-Visuals-Initiative&template_name=group_001&owner=%40me&visibility=public",
       "featured": true
